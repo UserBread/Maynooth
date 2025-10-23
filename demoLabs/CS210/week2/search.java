@@ -47,7 +47,7 @@ public class search {
         int target = 999999;
 
         //linear search timing
-        long start = System.nanoTime(); // get starting time for linear search
+        long start = System.nanoTime();
         int index_linear = linearSearch(numbers, target);
         long end = System.nanoTime();
         long elapsedTime = (end - start) / 1_000_000;
@@ -55,7 +55,7 @@ public class search {
         System.out.println("Output of linear search: "+index_linear);
 
         //binary search timing
-        start = System.nanoTime(); // get starting time for binary search
+        start = System.nanoTime(); 
         int index_binary = binarySearch(numbers, target);
         end = System.nanoTime();
         elapsedTime = (end - start) / 1_000_000;
